@@ -1,10 +1,10 @@
 class ComCli < Formula
-  desc "C++ Functions for Command Line Interface"
+  desc "C++ Functions for Command-Line Interface"
   homepage "https://github.com/goroyabu/com_cli"
-  url "https://github.com/goroyabu/com_cli/archive/1.1.3.zip"
-  version "1.1.3"
-  depends_on "make" => :build
+  url "https://github.com/goroyabu/com_cli/archive/1.1.2.tar.gz"
   depends_on "gcc" => :build
+  depends_on "make" => :build
+  depends_on "readline" => :build
 
   def install
     system "echo", "install..."

@@ -13,11 +13,11 @@ class ComCli < Formula
   end
 
   def caveats;
-    msg = <<-EOF.undent
-    you should
+    msg = <<~EOS
+    You should
     add the following commands to your shell initialization
     script (.bashrc/.profile/etc.)
-  EOF
+  EOS
   end    
 
   test do

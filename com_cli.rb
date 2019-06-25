@@ -9,10 +9,10 @@ class ComCli < Formula
   def install
     system "make", "install", "CXX=g++-9"
     lib.install "lib/libCOMCLI.so"
-    include.install "include/com_cli.hpp"
-    include.install "include/com.h"
-    include.install "include/cli.h"
-    include.install "include/cmdline.hpp"
+    include.install "source/com_cli.hpp"
+    include.install "source/com.h"
+    include.install "source/cli.h"
+    include.install "source/cmdline.hpp"
   end
 
   def caveats;

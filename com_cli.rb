@@ -9,6 +9,7 @@ class ComCli < Formula
   def install
     system "echo", "install..."
     system "make", "install", "CXX=g++-9"
+    bin.install "lib/libCOMCLI.so"
   end
 
   def info

@@ -16,8 +16,9 @@ class ComCli < Formula
     #                      "--disable-silent-rules",
     #                      "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
-    system "make install"
-    bin.install "lib/libCOMCLI.so" # if this fails, try separate make/make install steps
+    system "echo test"
+    #system "make", "install"
+    #bin.install "lib/libCOMCLI.so" # if this fails, try separate make/make install steps
   end
 
   test do

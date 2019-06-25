@@ -10,6 +10,7 @@ class ComCli < Formula
     system "echo", "install..."
     system "make", "install", "CXX=g++-9"
     lib.install "lib/libCOMCLI.so"
+    bin.install "this.sh"
   end
 
   def caveats;

@@ -9,14 +9,13 @@ class ComCli < Formula
   def install
     system "echo", "install..."
     system "make", "install", "CXX=g++-9"
-    bin.install "lib/libCOMCLI.so"
+    lib.install "lib/libCOMCLI.so"
   end
 
   def caveats;
     msg = <<~EOS
-    You should
-    add the following commands to your shell initialization
-    script (.bashrc/.profile/etc.)
+    You should add the following commands
+    to your shell initialization script (.bashrc/.profile/etc.)
   EOS
   end    
 

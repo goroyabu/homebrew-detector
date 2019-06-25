@@ -12,9 +12,13 @@ class ComCli < Formula
     bin.install "lib/libCOMCLI.so"
   end
 
-  def info
-    "sss"
-  end
+  def caveats;
+    msg = <<-EOF.undent
+    you should
+    add the following commands to your shell initialization
+    script (.bashrc/.profile/etc.)
+  EOF
+  end    
 
   test do
     system "false"

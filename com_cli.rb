@@ -7,16 +7,22 @@ class ComCli < Formula
   depends_on "readline" => :build
 
   def install
-    system "echo", "install..."
     system "make", "install", "CXX=g++-9"
     lib.install "lib/libCOMCLI.so"
-    bin.install "this.sh"
+    include.install "include/com_cli.hpp"
+    include.install "include/com.h"
+    include.install "include/cli.h"
+    include.install "include/cmdline.hpp"
   end
 
   def caveats;
     msg = <<~EOS
     You should add the following commands
     to your shell initialization script (.bashrc/.profile/etc.)
+    
+    export CPATH=/usr/local/include
+    export LD_LIBRARY_PATH=/usr/local/lib
+    export LIBRARY_PATH=/usr/local/lib
   EOS
   end    
 

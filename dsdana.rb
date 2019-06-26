@@ -16,6 +16,9 @@ class Dsdana < Formula
     bin.install "bin/dsdana"
     bin.install Dir["tools/bin/*"]
     share.install "example/"
+    share.install "source/"
+    share.install "Makefile"
+    
   end
 
   test do

@@ -9,8 +9,8 @@ class Dsdana < Formula
   depends_on "gcc" => :build
   depends_on "make" => :build
   depends_on "readline" => :build
-  depends_on "com_cli@#{COMCLI_VERSION}" => :build
-  depends_on "anlcross@#{ANLCROSS_VERSION}" => :build
+  depends_on "com_cli" => :build
+  depends_on "anlcross" => :build
   depends_on "root" => :build
 
   def install

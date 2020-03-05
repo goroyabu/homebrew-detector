@@ -1,6 +1,6 @@
 COMCLI_VERSION="1.1.4"
 
-class ComCli < Formula
+class ComCliAT114 < Formula
   desc "C++ Functions for Command-Line Interface"
   homepage "https://github.com/goroyabu/com_cli"
   url "https://github.com/goroyabu/com_cli/archive/#{COMCLI_VERSION}.tar.gz"

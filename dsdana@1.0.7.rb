@@ -1,8 +1,8 @@
-DSDANA_VERSION="1.0.8"
+DSDANA_VERSION="1.0.7"
 ANLCROSS_VERSION="1.1.0"
 COMCLI_VERSION="1.1.4"
 
-class Dsdana < Formula
+class DsdanaAT107 < Formula
   desc "Basic Analysis of Double-sided detectors"
   homepage "https://github.com/goroyabu/dsdana"
   url "https://github.com/goroyabu/dsdana/archive/#{DSDANA_VERSION}.tar.gz"
@@ -19,6 +19,9 @@ class Dsdana < Formula
     
     bin.install "bin/dsdana"
     bin.install Dir["tools/bin/*"]
+    share.install "example/"
+    share.install "source/"
+    share.install "Makefile"
     
   end
 

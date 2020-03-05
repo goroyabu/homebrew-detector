@@ -1,13 +1,14 @@
 ANLCROSS_VERSION="1.1.0"
+COMCLI_VERSION="1.1.4"
 
-class Anlcross < Formula
+class AnlcrossAT110 < Formula
   desc "Analysis Framework"
   homepage "https://github.com/goroyabu/anlcross"
   url "https://github.com/goroyabu/anlcross/archive/#{ANLCROSS_VERSION}.tar.gz"
   depends_on "gcc" => :build
   depends_on "make" => :build
   depends_on "readline" => :build
-  depends_on "com_cli" => :build
+  depends_on "com_cli@#{COMCLI_VERSION}" => :build
 
   def install
     system "make", "install", "CXX=g++-9"

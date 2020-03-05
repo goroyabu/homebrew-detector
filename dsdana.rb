@@ -1,4 +1,4 @@
-DSDANA_VERSION="1.0.8"
+DSDANA_VERSION="1.0.9"
 ANLCROSS_VERSION="1.1.0"
 COMCLI_VERSION="1.1.4"
 
@@ -18,8 +18,7 @@ class Dsdana < Formula
     system "make", "install_tools"
     
     bin.install "bin/dsdana"
-    bin.install Dir["tools/bin/*"]
-    
+    bin.install Dir["tools/bin/*"]  
   end
 
   test do

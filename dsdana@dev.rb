@@ -2,7 +2,7 @@ DSDANA_VERSION="1.0.9"
 ANLCROSS_VERSION="1.1.0"
 COMCLI_VERSION="1.1.4"
 
-class DsdanaAtDev < Formula
+class Dsdana@dev < Formula
   desc "Basic Analysis of Double-sided detectors"
   homepage "https://github.com/goroyabu/dsdana"
   url "https://github.com/goroyabu/dsdana/archive/#{DSDANA_VERSION}.tar.gz"
